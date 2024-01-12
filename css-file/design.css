@@ -87,48 +87,15 @@ nav a:hover {
   margin-top: 40px;
 }
 
-/* ========== Responsive media queries ========== */
-@media screen and (max-width: 576px) {
-  /* ======= Mobile Devices ======= */
-  header {
-    padding: 20px;
-  }
-
-  nav {
-    gap: 14px;
-    flex-direction: column;
-  }
-
-  .banner-title {
-    font-size: 44px;
-    margin-top: 38px;
-  }
-}
-
-@media screen and (min-width: 576px) and (max-width: 960px) {
-  /* ======= Tablet or medium Devices ======= */
-  header {
-    padding: 40px;
-  }
-  nav {
-    gap: 20px;
-    flex-direction: column;
-  }
-  .banner-title {
-    margin-top: 50px;
-  }
-}
-
 /* Main Styles */
 main {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 80px auto;
 }
 
 /* ============= Features section design start ============= */
 .features-container {
   display: flex;
-  margin-top: 80px;
   align-items: center;
 }
 .teams-img-container {
@@ -163,4 +130,47 @@ main {
   font-size: 1rem;
   font-weight: 400;
   line-height: 26px;
+}
+
+/* ========== Responsive media queries ========== */
+@media screen and (max-width: 576px) {
+  /* ======= Mobile Devices ======= */
+  header {
+    padding: 20px;
+  }
+
+  nav,
+  .features-container {
+    gap: 14px;
+    flex-direction: column;
+  }
+
+  .banner-title {
+    font-size: 44px;
+    margin-top: 38px;
+  }
+
+  .teams-img-container {
+    grid-template-columns: 1fr;
+  }
+
+  .features-text-content {
+    padding: 20px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  /* ======= Tablet or medium Devices ======= */
+  header {
+    padding: 40px;
+  }
+  nav,
+  .features-container {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .banner-title {
+    margin-top: 50px;
+  }
 }
