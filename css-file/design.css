@@ -143,7 +143,7 @@ main {
 
 /* ============= Features section design start ============= */
 .features-container {
-  gap: 80px;
+  gap: 40px;
   display: flex;
   margin: 130px auto;
 }
@@ -179,6 +179,13 @@ main {
   background: #ff900e;
   width: 300px;
   text-align: center;
+  position: relative;
+  bottom: 100px;
+}
+
+.feature-img img {
+  height: 80%;
+  margin-left: 60px;
 }
 
 .ten-year-badge h2 {
@@ -265,10 +272,15 @@ main {
   nav,
   .team-container,
   .sponsors-item,
-  .fact-content {
+  .fact-content,
+  .features-container {
     align-items: center;
     gap: 20px;
     flex-direction: column;
+  }
+
+  .feature-img img {
+    margin-left: 0;
   }
 
   .sponsors-item {
@@ -292,10 +304,21 @@ main {
   nav,
   .team-container,
   .fact-content,
-  .sponsors-item {
+  .sponsors-item,
+  .features-container {
     gap: 14px;
     align-items: center;
     flex-direction: column;
+  }
+
+  .feature-img img {
+    width: 90%;
+    margin-left: 17px;
+  }
+
+  .ten-year-badge {
+    position: static;
+    max-width: 290px;
   }
 
   .sponsors-item {
