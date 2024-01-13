@@ -5,14 +5,28 @@
   font-family: "Work Sans", sans-serif;
 }
 
+.text-gray {
+  margin: 30px auto;
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.section-title {
+  font-size: 35px;
+  font-weight: 700;
+  color: #131313;
+}
+
 .btn-primary {
   border: 0;
   color: #fff;
   font-size: 20px;
   cursor: pointer;
   font-weight: 500;
-  padding: 20px 25px;
-  border-radius: 12px;
+  padding: 18px 40px;
+  border-radius: 50px;
   transition: all 0.2s;
   background: #f3860a;
 }
@@ -31,12 +45,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.nav-title {
-  font-size: 35px;
-  font-weight: 700;
-  color: #131313;
+  background-color: rgba(192, 127, 252, 0.61);
 }
 
 nav > ul {
@@ -45,12 +54,12 @@ nav > ul {
 
 nav li {
   list-style: none;
+  margin-right: 30px;
 }
 
 nav a {
   font-size: 18px;
   font-weight: 400;
-  margin-right: 30px;
   transition: all 0.2s;
   text-decoration: none;
   color: var(--Dark-02, #424242);
@@ -89,12 +98,13 @@ nav a:hover {
 
 /* Main Styles */
 main {
+  width: 90%;
   max-width: 1440px;
   margin: 80px auto;
 }
 
-/* ============= Features section design start ============= */
-.features-container {
+/* ============= Teams section design start ============= */
+.team-container {
   display: flex;
   align-items: center;
 }
@@ -104,12 +114,12 @@ main {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.features-text-content {
+.team-text-content {
   padding-left: 60px;
   padding-right: 60px;
 }
 
-.features-title {
+.team-title {
   font-size: 2.8rem;
 }
 
@@ -119,12 +129,12 @@ main {
   font-weight: 400;
 }
 
-.features-title .text-features {
+.team-title .text-features {
   color: #ff900e;
   font-weight: 700;
 }
 
-.features-description {
+.team-description {
   margin: 34px auto;
   color: #727272;
   font-size: 1rem;
@@ -132,7 +142,24 @@ main {
   line-height: 26px;
 }
 
+/* ============= Features section design start ============= */
+
 /* ========== Responsive media queries ========== */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  /* ======= Tablet or medium Devices ======= */
+  header {
+    padding: 40px;
+  }
+  nav,
+  .team-container {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .banner-title {
+    margin-top: 50px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   /* ======= Mobile Devices ======= */
   header {
@@ -140,7 +167,7 @@ main {
   }
 
   nav,
-  .features-container {
+  .team-container {
     gap: 14px;
     flex-direction: column;
   }
@@ -154,23 +181,8 @@ main {
     grid-template-columns: 1fr;
   }
 
-  .features-text-content {
-    padding: 20px;
+  .team-text-content {
+    padding: 0;
     margin-top: 30px;
-  }
-}
-
-@media screen and (min-width: 576px) and (max-width: 960px) {
-  /* ======= Tablet or medium Devices ======= */
-  header {
-    padding: 40px;
-  }
-  nav,
-  .features-container {
-    gap: 20px;
-    flex-direction: column;
-  }
-  .banner-title {
-    margin-top: 50px;
   }
 }
