@@ -14,7 +14,7 @@
 }
 
 .section-title {
-  font-size: 35px;
+  font-size: 44px;
   font-weight: 700;
   color: #131313;
 }
@@ -150,13 +150,14 @@ main {
   max-width: 560px;
   margin-bottom: 80px;
 }
+
 .fact-content {
   display: flex;
   justify-content: space-around;
 }
 
 .fact-content .box {
-  width: 241.831px;
+  width: 220.831px;
   border-radius: 8px;
   padding: 45px 36px;
   text-align: center;
@@ -176,19 +177,48 @@ main {
   font-weight: 600;
 }
 
+/* ============= Sponsor section design start ============= */
+.sponsors-container {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.sponsor-text-content {
+  margin: 0 auto;
+  max-width: 560px;
+  margin-bottom: 50px;
+}
+
+.sponsors-item {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* ========== Responsive media queries ========== */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   /* ======= Tablet or medium Devices ======= */
   header {
     padding: 40px;
   }
+
   nav,
-  .team-container {
+  .team-container,
+  .sponsors-item,
+  .fact-content {
+    align-items: center;
     gap: 20px;
     flex-direction: column;
   }
+
+  .sponsors-item {
+    gap: 45px;
+  }
+
   .banner-title {
     margin-top: 50px;
+  }
+  .fact-content {
+    gap: 14px;
   }
 }
 
@@ -199,9 +229,20 @@ main {
   }
 
   nav,
-  .team-container {
+  .team-container,
+  .fact-content,
+  .sponsors-item {
     gap: 14px;
+    align-items: center;
     flex-direction: column;
+  }
+
+  .sponsors-item {
+    gap: 45px;
+  }
+
+  .fact-content {
+    padding: 0 20px;
   }
 
   .banner-title {
